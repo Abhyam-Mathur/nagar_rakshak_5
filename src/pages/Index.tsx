@@ -6,10 +6,7 @@ import ComplaintTracking from "../components/ComplaintTracking.tsx";
 import HelplineNumbers from "../components/HelplineNumbers.tsx";
 import AdminPortal from "../components/AdminPortal.tsx";
 import AdminLogin from "../components/AdminLogin.tsx";
-<<<<<<< HEAD
 import AuthLogin from "../components/AuthLogin.tsx";
-=======
->>>>>>> 09808fb3e273bbd0e7640e462b59f4042c80566d
 import Signup from "../components/Signup.tsx";
 
 
@@ -36,21 +33,17 @@ const Index = () => {
     setCurrentScreen(nextScreenAfterBack(currentScreen));
   };
 
-<<<<<<< HEAD
   const handleLoginSuccess = (userRole: string) => {
     // Handle successful login - navigate to dashboard
     setCurrentScreen('dashboard');
   };
 
-=======
->>>>>>> 09808fb3e273bbd0e7640e462b59f4042c80566d
   const renderScreen = () => {
     switch (currentScreen) {
       case 'splash':
         return <SplashScreen onNavigate={handleNavigation} />;
 
       case 'login':
-<<<<<<< HEAD
         return (
           <AuthLogin 
             onBack={() => setCurrentScreen('splash')} 
@@ -59,8 +52,6 @@ const Index = () => {
           />
         );
 
-=======
->>>>>>> 09808fb3e273bbd0e7640e462b59f4042c80566d
       case 'signup':
         return <Signup onBack={() => setCurrentScreen('splash')} onNavigate={handleNavigation} />;
 
@@ -107,8 +98,4 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV !== 'p
   // Any other/unknown screen should go to splash
   console.assert(nextScreenAfterBack('admin') === 'splash', 'Back from admin should go to splash');
   console.assert(nextScreenAfterBack('unknown') === 'splash', 'Back from unknown should go to splash');
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 09808fb3e273bbd0e7640e462b59f4042c80566d
