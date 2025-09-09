@@ -2,7 +2,11 @@
 Welcome to Nagar Rakshak
 Project info
 
+<<<<<<< HEAD
 Live Website: https://nagarrakshak.netlify.app/
+=======
+Live Website: https://nagarrakshak-app.netlify.app/
+>>>>>>> 09808fb3e273bbd0e7640e462b59f4042c80566d
 
 How can I edit this code?
 
